@@ -1,7 +1,12 @@
-export default function appendToEachArrayValue(array, appendString) {
-  for (let i = 0; i < array.length; i++) {
-    array[i] = appendString + array[i];
-  }
-  return array;
-}
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 
+export default function appendToEachArrayValue(array, appendString) {
+  const arr = [];
+  for (const idx of array) {
+    const value = idx;
+    arr.push(appendString + value);
+  }
+
+  return arr;
+}
